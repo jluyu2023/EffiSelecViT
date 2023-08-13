@@ -2,7 +2,7 @@
 
 Our approach consists of a search and fine-tuning phase:
 
--  Search
+- Search
 
   Performing an importance search on components of the pre-trained model.
 
