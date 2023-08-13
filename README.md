@@ -23,7 +23,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node
 - Fine-tuning
 
 ```
-CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4 --use_env finetune.py --retrain --search_checkpoint ./search_checkpoint/deit-base/deit_base/checkpoint.pth --prune_head --head_prune_ratio 0.3 --prune_mlp --mlp_prune_ratio 0.5
+CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4 --use_env finetune.py --data-path /path/to/dataset --retrain --search_checkpoint /path/to/search_checkpoint --prune_head --head_prune_ratio 0.3 --prune_mlp --mlp_prune_ratio 0.5
 ```
 
 
